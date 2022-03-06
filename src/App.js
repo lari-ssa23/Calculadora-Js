@@ -31,7 +31,7 @@ export class App extends Component {
   };
   soma = () => {
     const { n1, n2 } = this.state;
-    if (this.state.n2 > 0) {
+    if (n1 && n2 !== "") {
       this.setState({
         res: n1 + n2,
         sinal: "+"
